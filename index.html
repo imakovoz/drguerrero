@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link href="css/master.css" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw"
-    async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw" -->
+    <!-- async defer></script> -->
     <title>Dra. Tere Guerrero</title>
   </head>
   <body>
     <header>
       <span id="header-left">
-        <img src="img/logo.png" alt="Dra. Tere Guerrero logo">
+        <img src="img/logo.png" alt="Dra. Tere Guerrero logo" id="logo">
       </span>
       <span id="header-right">
         <a>Inicio</a>
@@ -19,23 +19,59 @@
       </span>
     </header>
     <span id="section1">
-      <div class="col">
-        <img src="img/pic1.jpg" alt="Dra. Tere Guerrero profile picture">
-      </div>
-      <div class="col">
-        <div class="half-row" id="address">
-          <a>ONCO-UROLOGÍA</a>
+
+      <img src="img/pic1.jpg" alt="Dra. Tere Guerrero profile picture" id="profpic">
+      <div id="info" class="text">
+        <p>
+          “Sé la mejor version de ti mismo” 
           <br>
-          <a>Torre de Especialidades</a>
-          <a>Ángeles del Carmen</a>
-          <a>Tarascos Nº 3473, Piso 7 Interior 710</a>
-          <a>Guadalajara, Jalisco, México</a>
-        </div>
-        <div class="half-row">
-          <div id="map"></div>
-        </div>
+          Dra. Tere Guerrero, Médico Especialista en Otorrinolaringología y Cirugía de Cabeza y Cuello.
+        </p>
+      </div>
+      <div id="infopic">
+        <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
       </div>
 
+
+      <div id="address" class="text">
+        <a>ONCO-UROLOGÍA</a>
+        <br>
+        <a>Torre de Especialidades</a>
+        <a>Ángeles del Carmen</a>
+        <a>Tarascos Nº 3473, Piso 7 Interior 710</a>
+        <a>Guadalajara, Jalisco, México</a>
+      </div>
+      <!-- <div class="third-row"> -->
+        <div id="map"></div>
+      <!-- </div> -->
+      <div id="desc" class="text">
+        <p>Otorrinolaringólogo certificado por la Sociedad Mexicana de Otorrinolangologìa de Cabeza y Cuello con 26 años de trayectoria en cirugías funcionales y estéticas de naríz, y experta en Tratamientos estéticos avanzados y tratamientos con aparatologia corporales y faciales</p>
+      </div>
+
+      <div id="text3" class="text center">
+        <p>
+          Mi promesa
+          <br>
+          PARA TI
+          <br>
+          “Mi principal preocupación es tu salud. Soy una doctora que presta extréma atención al detalle. Mi objetivo, es hacerte la mejor version de ti mismo.”
+        </p>
+      </div>
+
+
     </span>
+
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw&callback=initMap"
+    async defer></script>
+    <!-- <script src="js/map.js"></script> -->
   </body>
 </html>
