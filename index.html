@@ -2,7 +2,11 @@
 <html lang="esp" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <link href="css/master.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw" -->
     <!-- async defer></script> -->
     <title>Dra. Tere Guerrero</title>
@@ -19,7 +23,6 @@
       </span>
     </header>
     <span id="section1">
-
       <img src="img/pic1.jpg" alt="Dra. Tere Guerrero profile picture" id="profpic">
       <div id="info" class="text">
         <p>
@@ -29,17 +32,23 @@
         </p>
       </div>
       <div id="infopic">
-        <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
+        <div class='container'>
+          <div class='single-item'>
+            <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic3.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic4.jpg" alt="Dra. Tere Guerrero profile picture">
+          </div>
+        </div>
       </div>
 
 
       <div id="address" class="text">
-        <a>ONCO-UROLOGÍA</a>
+        <a>Innovare Spa</a>
         <br>
-        <a>Torre de Especialidades</a>
-        <a>Ángeles del Carmen</a>
-        <a>Tarascos Nº 3473, Piso 7 Interior 710</a>
-        <a>Guadalajara, Jalisco, México</a>
+        <a>Clínica Innovare PB</a>
+        <a>Av. Verona 7412</a>
+        <a>Col. Villa Verona</a>
+        <a>Zapopan, Jalisco, Mexico 45019</a>
       </div>
       <!-- <div class="third-row"> -->
         <div id="map"></div>
@@ -57,21 +66,114 @@
           “Mi principal preocupación es tu salud. Soy una doctora que presta extréma atención al detalle. Mi objetivo, es hacerte la mejor version de ti mismo.”
         </p>
       </div>
+    </span>
 
+    <span id="section2">
+      <div id="pic4">
+        <div class='container'>
+          <div class='single-item'>
+            <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic3.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic4.jpg" alt="Dra. Tere Guerrero profile picture">
+          </div>
+        </div>
+      </div>
 
+      <div id="text4">
+        (NARIZ, BOCA Y CUELLO)
+
+        <li>Consulta de otorrinolaringología</li>
+        <li>Cirugía estética y functional de nariz </li>
+      </div>
+
+      <div id="pic5">
+        <div class='container'>
+          <div class='single-item'>
+            <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic3.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic4.jpg" alt="Dra. Tere Guerrero profile picture">
+          </div>
+        </div>
+      </div>
+
+      <div id="text5">
+        (Tratamientos estéticos avanzados)
+
+        <li>Lipoinyección de cara</li>
+
+        <li>Rejuvenecimiento quirúrgico de area peribucal </li>
+
+        <li>Toxina Butolínica: </li>
+        <li>Botox</li>
+        <li>Dysport</li>
+        <li>Xeomeen</li>
+
+        <li>Rellenos Faciales: </li>
+        <li>Restylane (ácido hialurónico)</li>
+        <li>Juvéderm</li>
+
+        <li>Plasma Rico en Plaquetas: </li>
+        <li>Aplicado con agujas</li>
+        <li>Aplicado con Dermapen</li>
+
+        <li>Vacunas antienvejecimiento </li>
+
+        <li>Peeling químicos </li>
+        <li>Con TCA y Glicolico</li>
+      </div>
+
+      <div id="pic6">
+        <div class='container'>
+          <div class='single-item'>
+            <img src="img/pic2.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic3.jpg" alt="Dra. Tere Guerrero profile picture">
+            <img src="img/pic4.jpg" alt="Dra. Tere Guerrero profile picture">
+          </div>
+        </div>
+      </div>
+
+      <div id="text6">
+        (Tratamientos con aparatologia corporales y faciales)
+
+        <li>Carboxitrapia</li>
+        <li>Radiofrecuencia</li>
+        <li>Intracel</li>
+        <li>Soli-Tone</li>
+        <li>Ultrasonido Facial</li>
+        <li>Depilación</li>
+        <li>Lumicell</li>
+        <li>Body Health</li>
+        <li>Mesoterapia sin agujas</li>
+        <li>Luz Pulsada</li>
+        <li>Limpiezas Faciales</li>
+        <li>Hidratación Facial</li>
+        <li>Drenaje Linfático </li>
+      </div>
+
+      <footer />
     </span>
 
     <script>
       var map;
+      const position = {lat: 20.7025907, lng: -103.44596180000002}
       function initMap() {
+        var icon = {
+          // url: "img/logo.png", // url
+          // size: new google.maps.Size(20, 32)
+          // origin: new google.maps.Point(0, 0),
+          // anchor: new google.maps.Point(0, 32)
+        };
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: position,
+          zoom: 14
         });
+        var marker = new google.maps.Marker({position: position, map: map});
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw&callback=initMap"
     async defer></script>
-    <!-- <script src="js/map.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="js/master.js"></script>
   </body>
 </html>
