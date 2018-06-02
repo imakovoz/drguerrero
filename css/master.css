@@ -123,11 +123,20 @@ img {
 }
 
 .slick-slide {
-   height:320px;
+   height: 21vw;
 }
 
 .slick-slide img {
-   height:320px;
+   height: 21vw;
+}
+
+.bottom-text {
+  padding: 20px 40px;
+  overflow: hidden;
+}
+
+.text li {
+  align-self: flex-start;
 }
 
 #pic4 {
@@ -135,9 +144,19 @@ img {
   grid-row: 1;
 }
 
+#text4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
 #pic5 {
   grid-column: 2;
   grid-row: 2
+}
+
+#text5 {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 #pic6 {
