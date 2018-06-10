@@ -218,8 +218,14 @@ h6 {
 
 .bottom-text {
   padding: 20px 40px;
-  overflow: hidden;
+  overflow: scroll;
 }
+
+.bottom-text ul {
+  padding-left: 30px;
+  list-style-type: circle;
+}
+
 
 .text li {
   align-self: flex-start;
@@ -236,6 +242,10 @@ h6 {
 #text4 {
   grid-column: 2;
   grid-row: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  flex-direction: column;
 }
 
 #pic5 {
@@ -249,6 +259,10 @@ h6 {
 #text5 {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  flex-direction: column;
 }
 
 #pic6 {
@@ -262,6 +276,10 @@ h6 {
 #text6 {
   grid-column: 2;
   grid-row: 3;
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  flex-direction: column;
 }
 
 footer {
