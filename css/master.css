@@ -189,7 +189,7 @@ h6 {
   display: grid;
   height: 80vw;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 30% 30% 30% 10%;
+  grid-template-rows: 30% 30% 30% 200px;
 }
 
 .container {
@@ -259,4 +259,11 @@ footer {
   grid-column: 1 / 3;
   grid-row: 4;
   background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+footer > span {
+  width: 50%;
+  height: 100%;
 }
