@@ -1,0 +1,30 @@
+#trajectoria {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 75px);
+  width: 100vw;
+  margin-top: 70px;
+}
+
+#trajectoria > div {
+  width: 50%;
+  height: 100%;
+}
+
+#trajectoria-img {
+  object-fit: contain;
+}
+
+#trajectoria-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+#trajectoria-text ul {
+  list-style-type: circle;
+  margin-left: 15px;
+  line-height: 20px;
+}
