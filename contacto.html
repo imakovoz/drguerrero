@@ -8,9 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet">
+    <link href="css/contacto.css" rel="stylesheet">
     <title>Dra. Tere Guerrero</title>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=223747385023298&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <header>
       <span id="header-left">
         <img src="img/logo.png" alt="Dra. Tere Guerrero logo" id="logo">
@@ -21,5 +30,37 @@
         <a href="contacto.html" class="links">Contacto</a>
       </span>
     </header>
+    <span id="contacto">
+      <div id="contacto-map-containger">
+        <div id="map"></div>
+      </div>
+      <div id="contacto-text">
+        <article>
+          <h2>Contactme</h2>
+          <h3>Email: tere@drateresaguerrero.com </h3>
+          <h3>Teléfono: (33) 1077 – 4633</h3>
+          <h3>Facebook: <a href="www.facebook.com/Dra.TereGuerrero/" class="links">https://www.facebook.com/Dra.TereGuerrero/</a></h3>
+        </article>
+      </div>
+    </span>
+    <script>
+      var map;
+      const position = {lat: 20.7025907, lng: -103.44596180000002}
+      function initMap() {
+        var icon = {
+          // url: "img/logo.png", // url
+          // size: new google.maps.Size(20, 32)
+          // origin: new google.maps.Point(0, 0),
+          // anchor: new google.maps.Point(0, 32)
+        };
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: position,
+          zoom: 14
+        });
+        var marker = new google.maps.Marker({position: position, map: map});
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw&callback=initMap"
+    async defer></script>
   </body>
 </html>
