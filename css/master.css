@@ -132,3 +132,12 @@ h6 {
   width: 100%;
   height: 100%;
 }
+.single-item .slick-track {
+    background: none !important;
+}
+
+.single-item .slick-slide {
+   background: none !important;
+   margin-right: 5px;
+   padding: 3px;
+}

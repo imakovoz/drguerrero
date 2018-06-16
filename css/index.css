@@ -6,6 +6,12 @@
   grid-template-rows: 0% 20% 14% 10% 14% 21% 23%;
 }
 
+#gradientbackground1 {
+  background: linear-gradient(#F1F1F1, white);
+  grid-column: 1 / 3;
+  grid-row: 3 / 7;
+}
+
 #profpic {
   grid-column: 1;
   grid-row: 2 / 4;
@@ -48,16 +54,20 @@
 #text3 {
   grid-column: 1 / 3;
   grid-row: 7;
-  margin: 5% 20%;
-  padding: 10px;
+  margin: 5% 0 30px 0;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px solid #50b4c2;
-  border-radius: 10px;
+  background-color: #50b4c2;
+  /* border-radius: 10px; */
   -moz-box-shadow: 0 0 10px #50b4c2;
   -webkit-box-shadow: 0 0 10px #50b4c2;
   box-shadow: 0 0 10px #50b4c2;
+}
+
+#text3 > p {
+  padding: 0 5% 0 5%;
 }
 
 #section2 {
@@ -71,7 +81,7 @@
   /* margin: auto auto; */
   height: 80%;
   width: 80%;
-  background: white;
+  background-color: rgb(255,255,255, 0);
 
 }
 
@@ -104,6 +114,24 @@
 
 .text li {
   align-self: flex-start;
+}
+
+#gradientbackground2 {
+  background-color: #e0e0e0;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+#gradientbackground3 {
+  background-color: #ededed;
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+#gradientbackground4 {
+  background-color: #f2f2f2;
+  grid-column: 1 / 3;
+  grid-row: 3;
 }
 
 #pic4 {
