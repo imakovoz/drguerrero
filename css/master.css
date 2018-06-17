@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: black;
+}
+
 header {
   width: 100vw;
   height: 70px;

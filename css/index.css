@@ -279,3 +279,15 @@ footer > span {
   height: 10vw;
 
 }
+
+
+.bottom-text ul li {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .bottom-text ul li {
+    font-size: 100%;
+  }
+}
