@@ -56,8 +56,11 @@
 }
 
 #fbplugin {
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* padding: 10%;
   text-align: justify;
   font-size: 13px;
