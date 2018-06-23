@@ -339,6 +339,7 @@ footer {
 footer > span {
   width: 50%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 #fbfooter {
@@ -392,8 +393,8 @@ footer > span {
 #contactForm input {
   border: none;
   border-bottom: 1px solid black;
-  margin: 5px 0;
-  padding: 4px 0;
+  margin: 10px 0;
+  padding: 7px 0 7px 5px;
   width: 50%;
 }
 
@@ -404,9 +405,17 @@ footer > span {
   color: white;
 }
 
+input:focus {
+  outline: 0 !important;
+}
+
 #privacy {
   grid-column: 1 / 3;
   grid-row: 7;
   display: flex;
   padding-left: 3%;
+}
+
+#trajectoria ul > li {
+  margin: 8px 0;
 }

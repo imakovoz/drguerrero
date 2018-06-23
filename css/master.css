@@ -74,7 +74,6 @@ h6 {
     font-size: 18px;
   }
 
-
   #desc * {
     font-size: 24px;
     line-height: 28px;
@@ -94,12 +93,16 @@ h6 {
 }
 
 .gray {
-  color: #B3B5B0;
+  color: #b3b5b0;
 }
 
 .teal {
-  color: #4FB3C2;
-  font-family: 'Allura', cursive;
+  color: #4fb3c2;
+}
+
+.tealproc {
+  color: #4fb3c2;
+  font-family: "Allura", cursive;
 }
 
 .heavy {
@@ -110,7 +113,6 @@ h6 {
 .center {
   text-align: center;
 }
-
 
 #logo {
   object-fit: contain;
@@ -144,11 +146,11 @@ h6 {
   height: 100%;
 }
 .single-item .slick-track {
-    background: none !important;
+  background: none !important;
 }
 
 .single-item .slick-slide {
-   background: none !important;
-   margin-right: 5px;
-   padding: 3px;
+  background: none !important;
+  margin-right: 5px;
+  padding: 3px;
 }
