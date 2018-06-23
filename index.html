@@ -33,12 +33,16 @@
         <img src="img/logo-transparent.png" alt="Dra. Tere Guerrero logo" id="logo">
       </span>
       <span id="header-right">
-        <a href="index.html" class="links">Inicio</a>
-        <a href="trayectoria.html" class="links">Trajectoria</a>
-        <a href="contacto.html" class="links">Contacto</a>
+        <a class="links" id="iniciolink">Inicio</a>
+        <a class="links" id="procedimientoslink">Procedimientos</a>
+        <a class="links" id="trajectorialink">Trajectoria</a>
+        <a class="links" id="contactolink">Contacto</a>
+        <!-- <a href="index.html" class="links" id="initiolink">Inicio</a>
+        <a href="trayectoria.html" class="links" id="trajectorialink">Trajectoria</a>
+        <a href="contacto.html" class="links" id="contactolink">Contacto</a> -->
       </span>
     </header>
-    <span id="section1">
+    <span id="inicio">
       <div id="phonenum">
         <div>
           <p>Haz una cita</p>
@@ -106,7 +110,7 @@
       </div>
     </span>
 
-    <span id="section2">
+    <span id="procedimientos">
       <div id="gradientbackgroundtest"></div>
       <!-- <div id="gradientbackground2"></div> -->
 
@@ -227,7 +231,7 @@
 
       <div class="divider" id="divider4"></div>
 
-      <footer>
+      <footer id="contacto">
         <span id="contactme">
           <div>
             <h3>Haz una cita</h3>
@@ -282,22 +286,22 @@
     </span>
 
     <script>
-      var map;
-      const position = {lat: 20.7025907, lng: -103.44596180000002}
-      function initMap() {
-        var icon = {
-          // url: "img/logo.png", // url
-          // size: new google.maps.Size(20, 32)
-          // origin: new google.maps.Point(0, 0),
-          // anchor: new google.maps.Point(0, 32)
-        };
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: position,
-          zoom: 14
-        });
-        var marker = new google.maps.Marker({position: position, map: map});
-      }
-    </script>
+    var map;
+const position = { lat: 20.7025907, lng: -103.44596180000002 };
+function initMap() {
+  var icon = {
+    // url: "img/logo.png", // url
+    // size: new google.maps.Size(20, 32)
+    // origin: new google.maps.Point(0, 0),
+    // anchor: new google.maps.Point(0, 32)
+  };
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: position,
+    zoom: 14
+  });
+  var marker = new google.maps.Marker({ position: position, map: map });
+}
+</script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFueSILoULFdEMKILcHq1gCPhHrvsMcw&callback=initMap"
     async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
