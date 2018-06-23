@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   console.log(test);
   console.log(test.matches);
   if (test.matches) {
-    document.getElementById("facbookbig").setAttribute("display", "hidden");
-    document.getElementById("facbookprof").setAttribute("display", "flex");
+    document.getElementById("facebookbig").setAttribute("display", "hidden");
+    document.getElementById("facebooksmall").setAttribute("display", "flex");
   } else {
-    document.getElementById("facbookbig").setAttribute("display", "flex");
-    document.getElementById("facbookprof").setAttribute("display", "hidden");
+    document.getElementById("facebookbig").setAttribute("display", "flex");
+    document.getElementById("facebooksmall").setAttribute("display", "hidden");
   }
 
   var links = ["inicio", "procedimientos", "trajectoria", "contacto"];
