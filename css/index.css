@@ -231,6 +231,10 @@
   grid-row: 2;
 }
 
+#divider3 {
+  grid-row: 3;
+}
+
 #divider4 {
   margin-top: 90px;
   grid-row: 5;
