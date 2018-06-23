@@ -384,24 +384,34 @@ footer > span {
   font-size: 16px;
 }
 
-#facebookbig {
+/* #facebookbig {
   display: none;
 }
 
 #facebooksmall {
   display: flex;
-}
+} */
 
 @media only screen and (min-width: 600px) {
   .bottom-text ul li {
     font-size: 100%;
   }
   #facebookbig {
-    display: flex;
+    display: inline-block;
   }
 
   #facebooksmall {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #facebookbig {
+    display: none;
+  }
+
+  #facebooksmall {
+    display: inline-block;
   }
 }
 
