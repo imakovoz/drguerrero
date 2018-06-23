@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // adaptiveHeight: true
   });
 
+  var test = window.matchMedia("(max-width: 700px)");
+  if (test.matches) {
+    document.getElementById("facbookbig").setAttribute("display", "hidden");
+    document.getElementById("facbookprof").setAttribute("display", "flex");
+  } else {
+    document.getElementById("facbookbig").setAttribute("display", "flex");
+    document.getElementById("facbookprof").setAttribute("display", "hidden");
+  }
+
   var links = ["inicio", "procedimientos", "trajectoria", "contacto"];
   var elem = null;
   links.forEach(e => {
