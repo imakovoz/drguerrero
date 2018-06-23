@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   var test = window.matchMedia("(max-width: 700px)");
+  console.log(test);
+  console.log(test.matches);
   if (test.matches) {
     document.getElementById("facbookbig").setAttribute("display", "hidden");
     document.getElementById("facbookprof").setAttribute("display", "flex");
