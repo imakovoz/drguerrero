@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     infinite: true
     // adaptiveHeight: true
   });
+
+  var test = window.matchMedia("(max-width: 700px)");
+  if (test.matches) {
+    document.getElementById("facbookprof").setAttribute("data-height", "200");
+  }
+
   var links = ["inicio", "procedimientos", "trajectoria", "contacto"];
   var elem = null;
   links.forEach(e => {
