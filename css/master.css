@@ -99,6 +99,7 @@ h6 {
 
 .teal {
   color: #4FB3C2;
+  font-family: 'Allura', cursive;
 }
 
 .heavy {
@@ -109,6 +110,7 @@ h6 {
 .center {
   text-align: center;
 }
+
 
 #logo {
   object-fit: contain;

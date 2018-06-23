@@ -289,6 +289,11 @@
   justify-content: center;
   margin-left: 60px;
   flex-direction: column;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.bottom-text li {
+  font-family: 'IBM Plex Serif', serif;
 }
 
 #trajectoria {
