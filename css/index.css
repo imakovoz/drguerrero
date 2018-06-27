@@ -444,3 +444,16 @@ input:focus {
 #trajectoria ul > li {
   margin: 8px 0;
 }
+
+header a {
+  cursor: pointer;
+}
+
+.sub-list {
+  margin-left: 15px;
+  font-size: 90% !important;
+}
+
+.sub-list::before {
+  content: "◌ " !important;
+}
