@@ -1,7 +1,7 @@
 #inicio {
   margin-top: 70px;
   display: grid;
-  height: 140vw;
+  height: 150vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 20fr 14fr 10fr 14fr 21fr 28fr 300px;
 }
@@ -402,12 +402,14 @@ footer > span {
 
   #facebooksmall {
     display: none;
+    visibility: hidden;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #facebookbig {
     display: none;
+    visibility: hidden;
   }
 
   #facebooksmall {
