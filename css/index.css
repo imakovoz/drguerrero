@@ -392,7 +392,7 @@ footer > span {
   display: flex;
 } */
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .bottom-text ul li {
     font-size: 100%;
   }
@@ -406,7 +406,7 @@ footer > span {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #facebookbig {
     display: none;
     visibility: hidden;
